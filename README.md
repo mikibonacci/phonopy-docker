@@ -3,6 +3,12 @@
 Very early stage dev.
 
 Phonopy can be found in `/opt/conda/bin/phonopy`. 
+To build the image:
+
+```shell
+docker build . -t mikibonacci/phonopy-2.20.0:amd64 --platform linux/amd64
+```
+
 To use it with Appcontainer:
 
 ```shell

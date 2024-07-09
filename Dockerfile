@@ -19,4 +19,7 @@ RUN EXTRA_APT_PACKAGES="libhdf5-serial-dev pkg-config ${EXTRA_APT_PACKAGES}"; \
 #    fi;
 # End setup before Phonopy installation
 
+RUN conda config --add channels conda-forge
+RUN conda config --set channel_priority strict
+RUN conda install --yes seekpath
 RUN pip install --no-cache-dir -r requirements.txt
