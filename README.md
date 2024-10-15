@@ -11,13 +11,15 @@ docker build . -t mikibonacci/phonopy-2.20.0:amd64 --platform linux/amd64
 
 ## To use phonopy just run:
 
-````shell
+```shell
 docker run -it <image-name> phonopy # and the cmd line argument you usually use.
 ```
 
+to automatically remove the container after the execution, add ``--rm` after -it.
+
 if you run without any other input arguments, you should obtain:
 
-````shell
+```shell
 $docker run -it af2e94f769c6 phonopy
         _
   _ __ | |__   ___  _ __   ___   _ __  _   _

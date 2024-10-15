@@ -1,4 +1,4 @@
-FROM continuumio/miniconda3:latest
+FROM condaforge/mambaforge:latest
 
 WORKDIR /usr/src/app
 
